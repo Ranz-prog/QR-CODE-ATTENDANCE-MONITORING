@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PackageActivities.ActivityStudent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/lblStudentName"
+            android:gravity="center"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="@color/fontColor"
+            android:text="Student Name"/>
+
+        <TextView
+            android:id="@+id/lblStudentNumber"
+            android:gravity="center"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/fontColor"
+            android:text="Student Name"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/lblMacAddress"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:layout_marginEnd="45dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Student Name"/>-->
+
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="350dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

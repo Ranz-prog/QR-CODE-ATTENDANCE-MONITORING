@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/recyclerTitle</color>
+<!--    <color name="colorPrimary">#2D3D50</color>-->
+    <color name="colorPrimaryDark">@color/recyclerTitle</color>
+    <color name="colorAccent">#FF815C</color>
+<!--    <color name="colorAccent">#1DBD9C</color>-->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="white2">#DDDDDD</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFFF00</color>
+
+    <color name="palette1">#0CDBD3</color>
+    <color name="palette2">#AADAE2</color>
+    <color name="palette3">#F9CCCF</color>
+    <color name="palette4">#EFECE4</color>
+    <color name="palette5">#F6F7F6</color>
+
+    <color name="buttonGradient1">#8E2DE2</color>
+    <color name="buttonGradient2">#4A00E0</color>
+
+<!--    <color name="buttonGradient1">#56ab2f</color>-->
+<!--    <color name="buttonGradient2">#a8e063</color>-->
+
+    <color name="recyclerTitle">#4C41A3</color>
+    <color name="recyclerBg">#F6F6F6</color>
+    <color name="recyclerItem">#FFFFFF</color>
+
+    <color name="fontColor">#444A82</color>
+</resources>

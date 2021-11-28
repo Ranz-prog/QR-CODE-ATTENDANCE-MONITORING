@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/recyclerItem">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCheckbox"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/indicator"/>
+
+    <TextView
+        android:id="@+id/lblStudentName"
+        android:layout_toEndOf="@id/imgCheckbox"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontColor"
+        android:textSize="16sp"
+        android:text="Student Name"/>
+
+    <TextView
+        android:id="@+id/lblStudentNumber"
+        android:layout_alignStart="@id/lblStudentName"
+        android:layout_below="@id/lblStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Section: Name"/>
+
+</RelativeLayout>

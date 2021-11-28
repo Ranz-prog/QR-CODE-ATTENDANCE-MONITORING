@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recyclerBg"
+    tools:context=".PackageActivities.Classes">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <TextView
+        android:id="@+id/lblClasses"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/recyclerTitle"
+        android:textSize="32dp"
+        android:text="Classes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerClass"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblClasses"
+        android:clipToPadding="false"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCreateNewClass"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+</RelativeLayout>

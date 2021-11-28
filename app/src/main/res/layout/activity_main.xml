@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PackageActivities.MainActivity">
+
+    <!--    <include-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        layout="@layout/tool_toolbar"/>-->
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_curve_white"/>
+    
+    <ImageView
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/attendance"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white2"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="Username"/>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white2"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="Password"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnLoginAsStudent"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_1"
+            android:textAllCaps="false"
+            android:text="Login as Student"
+            android:textColor="@color/white"/>
+        
+        <TextView
+            android:id="@+id/lblOr"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttonGradient1"
+            android:textSize="20dp"
+            android:text="or"/>
+
+        <Button
+            android:id="@+id/btnLoginAsTeacher"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_1"
+            android:textAllCaps="false"
+            android:text="Login as Teacher"
+            android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressLogin"
+            android:visibility="gone"
+            android:layout_marginBottom="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

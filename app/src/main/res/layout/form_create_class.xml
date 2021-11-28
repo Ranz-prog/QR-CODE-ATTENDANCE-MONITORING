@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recyclerBg"
+    tools:context=".PackageForms.CreateClass">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@id/toolbar"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/create_class_graphics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_below="@id/image"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtSubject"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"/>
+
+        <EditText
+            android:id="@+id/txtSection"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Section"/>
+
+        <Button
+            android:id="@+id/btnCreateClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_button_1"
+            android:textAllCaps="false"
+            android:text="Create"
+            android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressCreateClass"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

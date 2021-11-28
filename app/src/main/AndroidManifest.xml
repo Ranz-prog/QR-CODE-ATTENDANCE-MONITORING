@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.attendancemonitoringqrcode">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".PackageApplication.ClassApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".PackageActivities.ActivityStudent2"></activity>
+        <activity android:name=".PackageActivities.ActivityStudent" />
+        <activity android:name=".PackageActivities.MyStudentDetails" />
+        <activity android:name=".PackageActivities.QRCodeGenerator" />
+        <activity android:name=".PackageActivities.ActivitySubject" />
+        <activity android:name=".PackageForms.CreateDate" />
+        <activity android:name=".PackageActivities.ActivityDate" />
+        <activity android:name=".PackageActivities.ActivityClass" />
+        <activity android:name=".PackageForms.CreateClass" />
+        <activity android:name=".PackageActivities.QRCodeScanner" />
+        <activity android:name=".PackageActivities.Subjects" />
+        <activity android:name=".PackageActivities.Classes" />
+        <activity android:name=".PackageForms.EditStudent" />
+        <activity android:name=".PackageActivities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.attendancemonitoringqrcode.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

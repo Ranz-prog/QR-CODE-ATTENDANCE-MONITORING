@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageActivities.MyStudentDetails">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/lblStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Student Name"/>
+
+        <TextView
+            android:id="@+id/lblStudentNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Student Number"/>
+
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="350dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
